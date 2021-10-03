@@ -8,4 +8,4 @@ COPY app.py /opt/
 
 ENTRYPOINT [ "python" ]
 
-CMD [ "app.py" ]
+CMD [ "/opt/app.py" ]
