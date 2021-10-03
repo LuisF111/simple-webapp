@@ -4,7 +4,7 @@ from flask import jsonify
 app = Flask(__name__)
 
 @app.route("/webapp")
-def main():
+def webapp():
     return jsonify(message='I am a webapp in Openshift.')
 
 @app.route("/")
