@@ -1,11 +1,7 @@
-FROM ubuntu:16.04
-
-RUN apt-get update && apt-get install -y python python-pip
+FROM python:3.6
 
 RUN pip install flask
 
 COPY app.py /opt/
 
-ENTRYPOINT [ "python" ]
-
-CMD [ "/opt/app.py" ]
+CMD [ "python", "/opt/app.py" ]
