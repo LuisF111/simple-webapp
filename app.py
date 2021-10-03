@@ -5,6 +5,10 @@ app = Flask(__name__)
 
 @app.route("/webapp")
 def main():
+    return jsonify(message='I am a webapp in Openshift.')
+
+@app.route("/")
+def main():
     return jsonify(message='Welcome to webapp from OpenShift.')
 
 if __name__ == "__main__":
