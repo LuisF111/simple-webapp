@@ -9,7 +9,7 @@ def webapp():
 
 @app.route("/")
 def main():
-    return jsonify(message='Welcome to webapp from OpenShift. Trigger webhook.')
+    return jsonify(message='Welcome to webapp from OpenShift. Trigger webhook!')
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
